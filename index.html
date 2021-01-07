@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Raveena</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="icon" href="girl.png">
+</head>
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud">
+    <div class="title-text">
+      <h1>I'm Raveena.</h1>
+      <h2 class="typing"> </h2>
+    </div>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
+    <img class="mountain" src="images/mountain.png" alt="mountain-img">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/Raveena.jpeg" alt="raveena-profile-img" style="width:12%;border-radius:45%">
+      <h2>Hello!!</h2>
+      <p class="intro">I am a student of Computer Engineering at <a href="">JC Bose University of Science and Technology, YMCA.</a>I wanna work with a reputed MNC to develop myself as a software enginner and also to add to the company's reputation .</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>Education</h2>
+      <table cellpadding="10px" style="margin-left:30%">
+        <tbody>
+          <tr>
+            <td> <li> B.Tech, Computer Engineering <br>
+              <a href="https://jcboseust.ac.in/">JC Bose UST, YMCA, faridad</a>
+             </li> </td>
+             <td> Batch:(2019,2023) <br> CGPA: 8.71 </td>
+          </tr>
+          <tr>
+            <td> <li>XII(Senior senondary) <br> <a href="https://cbse.nic.in/">CBSE Board</a> </li> </td>
+            <td>Year of completion: 2018 <br> Percentage: 92.6 </td>
+          </tr>
+          <tr>
+            <td> <li>X(High School) <br> <a href="https://cbse.nic.in/">CBSE Board</a></li> </td>
+            <td>Year of completion:2016 <br> CGPA:10 </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <h2>My Skills</h2>
+      <table cellpadding="10px" style="margin-left:30%">
+        <tbody>
+          <tr>
+            <td> <li>C Programming</li> </td>
+            <td> <li>C++ Programming</li> </td>
+          </tr>
+          <tr>
+            <td> <li>Javascript Programming</li> </td>
+            <td> <li>Python Programming</li> </td>
+          </tr>
+          <tr>
+            <td> <li>Competitive Programming</li> </td>
+            <td> <li>Web development</li> </td>
+          </tr>
+          <tr>
+            <td> <li>Teaching</li> </td>
+            <td> <li>Team managment and leadership</li> </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <h2>Languages Known</h2>
+      <ul style="margin-left:40%">
+        <li> <h3 style="color:#40514E;width:300px">English</h3> </li>
+        <li> <h3 style="color:#40514E;width:300px">Hindi</h3> </li>
+      </ul>
+      <hr>
+      <h2>Projects</h2>
+      <div class="skill-row">
+        <h3>Self CV</h3>
+        <p>This site is made as my portfolio which i managed myself. Here I have given details about my skills and about my personality.</p>
+      </div>
+      <div class="skill-row">
+        <h3>Restaurant Website</h3>
+        <p>I have made a website that is user friendly which was for my college mini project. I have not deployed it yet, but soon i will provide the link here as soon as it will be done with no flaws.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+        <p class="contact-message">Feel free to contact me for any development work!!!</p>
+      <a class="btn" href="mailto:raveenayadav173@gmail.com">CONTACT ME</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://instagram.com/im_ravee.na?igshid=1dgtc5reayvm6">Instagram</a>
+    <p class="copyright">© 2021_raveena</p>
+  </div>
+  <script type="text/javascript">
+    const texts= ["A PROGRAMMER","A SOFTWARE ENGINEER","A CE STUDENT","A BLOGGER","A WEB DEVELOPER"];
+  let count = 0;
+  let index=0;
+  let currentText="";
+  let letter="";
+  (function type(){
+    if(count===texts.length){
+      count=0;
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0,++index);
+    document.querySelector(".typing").textContent = letter;
+    if(letter.length=== currentText.length){
+      count++;
+      index=0;
+    }
+    setTimeout(type,150);
+  })();
+  </script>
+</body>
+
+</html>
